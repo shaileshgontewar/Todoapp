@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c4f6e83a77.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" id="blur">
+      <header>
+        <h2 id="heading">Tasks<span id="fheading"> List</span></h2>
+        <div class="button" id="addBtn">
+          <i class="fa fa-plus"></i><span>Add Item</span>
+        </div>
+      </header>
+
+      <div id="notodo">No Item in the todo list</div>
+      <div class="list-container" id="list-container"></div>
+    </div>
+    <div id="blur-2">
+      <h3>Trip To Paris</h3>
+    </div>
+    <div class="addNewList" id="addNewList">
+      <div class="heading">Add New List</div>
+      <input type="text" id="listText" placeholder="Add New List" />
+      <div class="btn-body">
+        <input type="button" value="Add" id="addList" class="btn" />
+        <input type="button" value="Close" id="cancelBtn" class="btn" />
+      </div>
+    </div>
+
+    <div id="parent" class="todo-list"></div>
+
+    <!-- JS File========================================================================= -->
+    <script src="./todo.js"></script>
+  </body>
+</html>
