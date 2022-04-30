@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <script
-      src="https://kit.fontawesome.com/c4f6e83a77.js"
+      src="https://kit.fontawesome.com/d65e853b8d.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
@@ -34,12 +36,34 @@
       <div class="heading">Add New List</div>
       <input type="text" id="listText" placeholder="Add New List" />
       <div class="btn-body">
-        <input type="button" value="Add" id="addList" class="btn" />
+        <input
+          type="button"
+          value="Add"
+          id="addList"
+          class="btn"
+          onclick="addTodo()"
+        />
+        <input type="button" value="Close" id="cancelBtn" class="btn" />
+      </div>
+    </div>
+    <div class="addNewList" id="popAddItem">
+      <div class="heading">Add New Item</div>
+      <input type="text" id="subListHeading" placeholder="Add New item" />
+      <div class="btn-body">
+        <input
+          type="button"
+          value="Add"
+          id="addList"
+          class="btn"
+          onclick="addSubTodo()"
+        />
         <input type="button" value="Close" id="cancelBtn" class="btn" />
       </div>
     </div>
 
     <div id="parent" class="todo-list"></div>
+
+    <!--  -->
 
     <!-- JS File========================================================================= -->
     <script src="./todo.js"></script>
